@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
-     <link href="output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body class="bg-black text-white">
-    <nav class="flex justify-between items-center px-8 py-4 bg-gray-800">
-    <div class="text-2xl text-yellow-400 font-bold">
-        <a href="#">ID</a>
+    <div class="shadow-2xl">
+        <nav class="flex justify-between items-center px-8 py-4 bg-gray-800">
+        <div class="text-2xl text-yellow-400 font-bold">
+            <a href="#">ID</a>
+        </div>
+        <ul class="flex space-x-8 text-gray-300">
+            <li><a href="#" class="hover:text-white">Home</a></li>
+            <li><a href="#" class="hover:text-white">About</a></li>
+            <li class="hover:text-white"><a href="#" >Contact</a></li>
+        </ul>
+        <input type="text" placeholder="Search" 
+        class="rounded px-3 py-1 bg-gray-300 text-sm focus:outline-none focus:ring focus:ring-yellow-400">
+       </nav>
+       
+       <section class="relative min-h-screen flex items-center text-white bg-gray-800 px-10">
+        <div class="flex-1 space-y-4">
+            <p class="text-xl">I'M<span class="text-5xl font-bold text-yellow-400"> Kelia Iradukunda</span></p>
+            <p class="text-lg">Software Engineer & Full Stack Developer</p>
+            <a href="#" 
+            class="inline-block text-yellow-400 border px-6 py-2 mt-4 border-yellow-400 rounded hover:bg-yellow-400 hover:text-black transition">Contact Me</a>
+        </div>
+        <div class="flex-1">
+            <img 
+            src="img/NobgPortImg.png" 
+            alt="Kelia's image"
+            class="absolute bottom-0 right-10 h-[90%] object-contain z-0">
+        </div>
+        <div class="flex flex-col space-y-4 absolute bottom-0 top-1/2 right-6 transform -translate-y-1/2">
+            <div class="bg-yellow-400 w-0.5 h-24 ml-0.5"></div>
+            <i class="fab fa-facebook-f text-white text-lg"></i>
+            <i class="fab fa-twitter text-lg"></i>
+            <i class="fab fa-linkedin-in text-lg"></i>
+            <i class="fab fa-whatsapp text-lg"></i>
+        </div>
+       </section>
     </div>
-    <ul class="flex space-x-8 text-gray-300">
-        <li><a href="#" class="hover:text-white">Home</a></li>
-        <li><a href="#" class="hover:text-white">About</a></li>
-        <li class="hover:text-white"><a href="#" >Contact</a></li>
-    </ul>
-    <input type="text" placeholder="Search" 
-    class="rounded px-3 py-1 bg-gray-300 text-sm focus:outline-none focus:ring focus:ring-yellow-400">
-   </nav>
-   
-   <section class="relative min-h-screen flex items-center text-white bg-gray-800 px-10 ">
-    <div class="flex-1 space-y-4">
-        <p class="text-xl">I'M<span class="text-5xl font-bold text-yellow-400"> Kelia Iradukunda</span></p>
-        <p class="text-lg">Software Engineer & Full Stack Developer</p>
-        <a href="#" 
-        class="inline-block text-yellow-400 border px-6 py-2 mt-4 border-yellow-400 rounded hover:bg-yellow-400 hover:text-black transition">Contact Me</a>
-    </div>
-    <div class="flex-1">
-        <img 
-        src="img/NobgPortImg.png" 
-        alt="Kelia's image"
-        class="absolute bottom-0 right-10 h-[90%] object-contain z-0">
+
+   <section class="bg-gray-800">
+    <div class="ml-14 mt-20">
+        <h5 class="font-bold text-4xl text-white">About</h5>
     </div>
    </section>
 </body>
