@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio website</title>
-    <link href="output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kelia Iradukunda - Portfolio</title>
+  <link href="output.css" rel="stylesheet" />
 </head>
-<body class="bg-black text-white">
-    <div class="shadow-2xl">
-        <nav class="flex justify-between items-center px-8 py-4 bg-gray-800">
-        <div class="text-2xl text-yellow-400 font-bold">
-            <a href="#">ID</a>
-        </div>
-        <ul class="flex space-x-8 text-gray-300">
-            <li><a href="#" class="hover:text-white">Home</a></li>
-            <li><a href="#" class="hover:text-white">About</a></li>
-            <li class="hover:text-white"><a href="#" >Contact</a></li>
-        </ul>
-        <input type="text" placeholder="Search" 
-        class="rounded px-3 py-1 bg-gray-300 text-sm focus:outline-none focus:ring focus:ring-yellow-400">
-       </nav>
-       
-       <section class="relative min-h-screen flex items-center text-white bg-gray-800 px-10">
-        <div class="flex-1 space-y-4">
-            <p class="text-xl">I'M<span class="text-5xl font-bold text-yellow-400"> Kelia Iradukunda</span></p>
-            <p class="text-lg">Software Engineer & Full Stack Developer</p>
-            <a href="#" 
-            class="inline-block text-yellow-400 border px-6 py-2 mt-4 border-yellow-400 rounded hover:bg-yellow-400 hover:text-black transition">Contact Me</a>
-        </div>
-        <div class="flex-1">
-            <img 
-            src="img/NobgPortImg.png" 
-            alt="Kelia's image"
-            class="absolute bottom-0 right-10 h-[90%] object-contain z-0">
-        </div>
-        <div class="flex flex-col space-y-4 absolute bottom-0 top-1/2 right-6 transform -translate-y-1/2">
-            <div class="bg-yellow-400 w-0.5 h-24 ml-0.5"></div>
-            <i class="fab fa-facebook-f text-white text-lg"></i>
-            <i class="fab fa-twitter text-lg"></i>
-            <i class="fab fa-linkedin-in text-lg"></i>
-            <i class="fab fa-whatsapp text-lg"></i>
-        </div>
-       </section>
+
+<body class="bg-[#1E1E2F] text-white font-sans">
+
+  <nav class="flex justify-between items-center px-10 py-5 bg-[#1E1E2F] shadow-lg">
+    <div class="text-2xl font-bold text-yellow-400">IK</div>
+    <ul class="flex space-x-8 text-gray-300 text-sm">
+      <li><a href="#" class="hover:text-white transition">About</a></li>
+      <li><a href="#" class="hover:text-white transition">Portfolio</a></li>
+      <li><a href="#" class="hover:text-white transition">Contact</a></li>
+    </ul>
+    <div>
+      <input
+        type="text"
+        placeholder="Search"
+        class="rounded px-3 py-1 bg-gray-700 text-white text-sm focus:outline-none focus:ring focus:ring-yellow-400"
+      />
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-between px-10 bg-[#1E1E2F] relative">
+    <div class="max-w-xl z-10">
+      <p class="text-lg text-gray-300 mb-2">I'M</p>
+      <h1 class="text-5xl font-bold text-yellow-400 mb-4">Kelia Iradukunda</h1>
+      <p class="text-lg text-gray-200">Software Engineer &amp; Full Stack Developer</p>
+      <a
+        href="#"
+        class="inline-block text-yellow-400 border border-yellow-400 px-5 py-2 mt-6 rounded hover:bg-yellow-400 hover:text-black transition"
+        >Contact Me</a
+      >
     </div>
 
-   <section class="bg-gray-800">
-    <div class="ml-14 mt-20">
-        <h5 class="font-bold text-4xl text-white">About</h5>
+    <!-- Profile Image -->
+    <div class="relative">
+      <img
+        src="img/port1.jpeg"
+        alt="Kelia"
+        class="h-[500px] object-contain grayscale contrast-125"
+      />
     </div>
-   </section>
+
+    <!-- Social Icons -->
+    <div class="absolute top-1/2 right-6 transform -translate-y-1/2 flex flex-col items-center space-y-4">
+      <div class="w-0.5 h-16 bg-yellow-400"></div>
+      <a href="#"><i class="fab fa-facebook-f text-white hover:text-yellow-400"></i></a>
+      <a href="#"><i class="fab fa-twitter text-white hover:text-yellow-400"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in text-white hover:text-yellow-400"></i></a>
+      <a href="#"><i class="fab fa-whatsapp text-white hover:text-yellow-400"></i></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-[#1E1E2F] py-20 px-10">
+    <h2 class="text-4xl font-bold text-white mb-6">About</h2>
+    <p class="text-gray-400 max-w-3xl">
+      I'm a passionate Software Engineer with experience in full stack development. I enjoy building
+      responsive web applications and solving complex problems with clean and efficient code.
+    </p>
+  </section>
+ 
 </body>
 </html>
